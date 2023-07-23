@@ -3,7 +3,7 @@ import OSM from './ol/source/OSM.js';
 import TileLayer from './ol/layer/Tile.js';
 import View from './ol/View.js';
 import * as proj from './ol/proj.js'
-let sc1_1 = document.getElementById('sc1')
+var sc1_1 = document.getElementById('o1')
 var lat =25.033671
 var long = 121.564427
 var map = new Map({
@@ -18,6 +18,9 @@ var map = new Map({
     zoom: 10,
   }),
 });
+var h1 = document.getElementById('h12')
+h1.innerText=""
+sc1_1.innerText="請選擇校車路線"
 function link (long_in,lat_in,zoom_i){
   var long_o = long_in 
   var lat_o = lat_in
