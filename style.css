@@ -1,0 +1,29 @@
+@import "./ol/ol.css";
+
+html,   
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+.sc1
+{
+    font-size: 64px;
+    border: 4px black ridge;
+    border-radius: 30px;
+
+
+}
+.sc_d
+{
+    padding:40PX; 
+    position: relative;
+    width: auto;
+    float: right;
+  }
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
