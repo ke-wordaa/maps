@@ -8,7 +8,8 @@ body {
 }
 .sc1
 {
-    font-size: 64px;
+    margin: 10px;
+    font-size: 7vh;
     border: 4px black ridge;
     border-radius: 30px;
 
@@ -31,4 +32,15 @@ h1{
   margin: 0;
   font-size:  100px;
   color: red;
+}
+@media screen and  (max-width:500px) {
+    .sc1
+    {
+      font-size: 4vh;
+      border: 2px;
+    }
+    h1
+    {
+      font-size: 40px;
+    }
 }
