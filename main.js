@@ -3,7 +3,9 @@ import OSM from './ol/source/OSM.js';
 import TileLayer from './ol/layer/Tile.js';
 import View from './ol/View.js';
 import * as proj from './ol/proj.js'
+alert("非正式版")
 var sc1_1 = document.getElementById('sc1')
+
 var ol = document.getElementById('o1')
 var lat =25.033671
 var long = 121.564427
@@ -20,6 +22,7 @@ var map = new Map({
   }),
 });
 var h1 = document.getElementById('h12')
+sc1_1.style.visibility ='visible'
 h1.innerText=""
 ol.innerText="請選擇校車路線"
 function link (long_in,lat_in,zoom_i){

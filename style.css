@@ -12,7 +12,7 @@ body {
     font-size: 7vh;
     border: 4px black ridge;
     border-radius: 30px;
-
+    text-align: center;
 
 }
 .sc_d
@@ -21,6 +21,7 @@ body {
     position: relative;
     width: auto;
     float: right;
+    visibility: hidden;
   }
   #map {
     position: absolute;
