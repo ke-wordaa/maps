@@ -1,26 +1,29 @@
 <!DOCTYPE html>
-<html lang="zh_tw">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>義民中學校車路線-2(Beta)</title>
-    <link rel="icon" href="favicon.ico">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Leaflet Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <link rel="stylesheet" href="style.css">
-    <script type="module" src="./main.js"></script>
-  </head>
-  <>  
-    <h1 id="h12">稍等一會，載入中....</h1>
-    <div id="map" class="map"></div>
-    <div>
-    <div class="op_css">
-      <select  class="sc1" id="sc1">
-        <option value="0">選擇地區</option>
-        <option value="竹北">竹北</option>
-      </select>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="map"></div>
+    <div class="op" style="font-weight: bold;">
+
+        <select style="font-size: 40px; margin: 20px;">
+            <option>請選擇鄉鎮市</option>
+            <option>竹北市</option>
+        </select>
+        <br>
+        <select style="font-size: 40px; margin: 20px;">
+            <option>請選擇路線</option>
+            <option>義民高中</option>
+        </select>
     </div>
-    <div class="op_css  ">  
-      <select  class="sc2" id="sc2"></select>
-    </div>
-  </div>
-  </body>
+    
+    <script src="main.js"></script>     
+</body>
 </html>

@@ -1,87 +1,14 @@
-@import "./ol/ol.css";
-
-html,   
-body {
-  margin: 0;
-  height: 100%;
-  overflow: hidden;
-}
-.sc1
+body
 {
-    margin: 10px;
-    font-size: 7vh;
-    border: 4px black ridge;
-    border-radius: 30px;
-    text-align: center;
-    visibility: hidden;
-}
-.op_css
+    overflow: hidden;
+    margin: 0;
+} 
+#map 
 {
-    padding:20px; 
-    position:fixed;
-    width: auto;
-    left: 70%;
-    
+    height: 50vh;
 }
-.op_css:nth-child(2)
-{
-  position: relative;
-  top: 90px;
-  
+.leaflet-popup-content {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center; 
 }
-.sc2
-{
-    margin: 10px;
-    font-size: 7vh;
-    border: 4px black ridge;
-    border-radius: 30px;
-    text-align: center;
-    visibility: hidden;
-}
-
-.over
-{
-  border: 4px black solid;
-}
-#map {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-  }
-h1{
-  margin: 0;
-  font-size:  100px;
-  color: red;
-}
-@media screen and  (max-width:500px) {
-    .sc1
-    {
-      font-size: 4vh;
-      border: 2px;
-    }
-    .sc2
-    {
-      font-size: 4vh;
-      border: 2px;
-    }
-    h1
-    {
-      font-size: 40px;
-    }
-    .op_css:nth-child(2)
-    {
-      top: 40px;;
-    }
-}
-@media screen and (max-width:1600px)  {
-  .op_css
-  {
-    left: 0;
-  }
-  .op_css:nth-child(2)
-  {
-    top: 85px;;
-  }
-}
-  
