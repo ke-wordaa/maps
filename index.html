@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Leaflet Map</title>
+    <title>校車地標地圖</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <link rel="stylesheet" href="style.css">
@@ -13,14 +13,18 @@
     <div id="map"></div>
     <div class="op" style="font-weight: bold;">
 
-        <select style="font-size: 40px; margin: 20px;">
-            <option>請選擇鄉鎮市</option>
-            <option>竹北市</option>
+        <select style="font-size: 40px; margin: 20px;" id="sc1">
+            <option>請選擇地區</option>
+            <option>橫山、竹東、北埔</option>
+            <option>新竹、雙溪竹師</option>
+            <option>竹北</option>
+            <option>關西、新埔</option>
+            <option>新豐</option>
+            <option>湖口、工業區、仰德路口</option>
         </select>
         <br>
-        <select style="font-size: 40px; margin: 20px;">
+        <select style="font-size: 40px; margin: 20px; " id="sc2">
             <option>請選擇路線</option>
-            <option>義民高中</option>
         </select>
     </div>
     
