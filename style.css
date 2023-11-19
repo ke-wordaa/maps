@@ -7,8 +7,16 @@ body
 {
     height: 50vh;
 }
-.leaflet-popup-content {
+.leaflet-popup-content
+{
     font-weight: bold;
     font-size: 30px;
     text-align: center; 
+}
+select
+{
+    font-weight: bold;
+    white-space: pre-wrap;
+    width: 350px;
+    height: 150px;
 }
