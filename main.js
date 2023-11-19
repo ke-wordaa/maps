@@ -15,7 +15,7 @@ let a1=
     '雙溪竹師'
 ]
 //竹北
-let a2  = 
+let a2= 
 [
     '文興線',
     '芎林 東海 健身房',
@@ -53,8 +53,11 @@ let a5=
 //取得元素
 var sc1 = document.getElementById('sc1')
 sc1.addEventListener('change',edit)
+var but = document.getElementById('but')
+but.addEventListener('click',move)
 var sc2 = document.getElementById('sc2')
-function edit() {
+function edit() 
+{
     if (sc1.value=='橫山、竹東、北埔') 
     {
         if (sc2.length!=1) {
@@ -134,8 +137,14 @@ function edit() {
 var location_0 = [24.83840105447053, 121.0037989629379]
 var location_1 = [25.035355944918575, 121.56444359244189]
 var map = L.map('map').setView(location_1,8);
-L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+function move()
+{
+    map.setView(location_0,18)
+}
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-    maxZoom:20,
-    detectRetina:true
+    maxZoom:25,
+    detectRetina:false,
+    prefercanvas:true   
 }).addTo(map)
+
