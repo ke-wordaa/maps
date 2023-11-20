@@ -116,6 +116,7 @@ function edit()
 
 function edit_2() 
 {
+    clearMarkers()
     map.setView([24.868914777821455, 120.99613626468131], 15);
     var selectedValue = sc2.value;
     if (selectedValue == '榮華新村 華南銀行') 
