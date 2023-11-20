@@ -56,6 +56,7 @@ sc1.addEventListener('change',edit)
 var but = document.getElementById('but')
 but.addEventListener('click',move)
 var sc2 = document.getElementById('sc2')
+sc2.style.visibility='hidden'
 function edit() 
 {
     if (sc1.value=='橫山、竹東、北埔') 
@@ -66,6 +67,7 @@ function edit()
         for (let i = 0; i < a0.length; i++) 
         {
             sc2.innerHTML+='<option>'+a0[i]+'</option>'
+            sc2.style.visibility='visible'
         }
     }
     else if (sc1.value=='新竹市') 
@@ -76,6 +78,7 @@ function edit()
         for (let i = 0; i < a1.length; i++) 
         {
             sc2.innerHTML+='<option>'+a1[i]+'</option>'
+            sc2.style.visibility='visible'
         }
     }
     else if (sc1.value=='新竹、雙溪竹師') 
@@ -86,6 +89,7 @@ function edit()
         for (let i = 0; i < a1.length; i++) 
         {
             sc2.innerHTML+='<option>'+a1[i]+'</option>'
+            sc2.style.visibility='visible'
         }
     }
     else if (sc1.value=='竹北') 
@@ -96,6 +100,7 @@ function edit()
         for (let i = 0; i < a2.length; i++) 
         {
             sc2.innerHTML+='<option>'+a2[i]+'</option>'
+            sc2.style.visibility='visible'
         }
     }
     else if (sc1.value=='關西、新埔') 
@@ -106,6 +111,7 @@ function edit()
         for (let i = 0; i < a3.length; i++) 
         {
             sc2.innerHTML+='<option>'+a3[i]+'</option>'
+            sc2.style.visibility='visible'
         }
     }
     else if (sc1.value=='新豐') 
@@ -116,6 +122,8 @@ function edit()
         for (let i = 0; i < a4.length; i++) 
         {
             sc2.innerHTML+='<option>'+a4[i]+'</option>'
+            sc2.style.visibility='visible'
+            
         }
     }
     else if (sc1.value=='湖口、工業區、仰德路口') 
@@ -126,11 +134,13 @@ function edit()
         for (let i = 0; i < a5.length; i++) 
         {
             sc2.innerHTML+='<option>'+a5[i]+'</option>'
+            sc2.style.visibility='visible'
         }
     }
     else
     {
         sc2.innerHTML='<option>請選擇路線</option>'
+        sc2.style.visibility='hidden'
     }
 }
 //地圖本體

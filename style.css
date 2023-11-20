@@ -2,10 +2,13 @@ body
 {
     overflow: hidden;
     margin: 0;
+    min-width: 250px;
+    min-height: 550px;
 } 
 #map 
 {
     height: 50vh;
+    width: 100%;
 }
 .leaflet-popup-content
 {
@@ -19,10 +22,18 @@ body
     font-weight: bold;
     white-space: pre-wrap;
     width: 350px;
-    height: 150px;
-    font-size: 40px;
+    height: 100px;
+    font-size: 32px;
 }
-@media (width<=400px) {
+button
+{
+    font-size: 64px;
+    border-radius: 16px;
+    font-weight: bold;
+    width: 400px;   
+}
+@media  (width<=500px ),( height<=500px)
+{
     #sc1,#sc2
     {
         margin: 4px;
@@ -32,5 +43,9 @@ body
         height: 100px;
         font-size: 20px;
     }
-   
+    button
+    {
+        width:200px;
+        font-size: 16px;
+    }
 }
