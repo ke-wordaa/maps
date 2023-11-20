@@ -13,10 +13,24 @@ body
     font-size: 30px;
     text-align: center; 
 }
-select
+#sc1,#sc2
 {
+    margin: 10px;
     font-weight: bold;
     white-space: pre-wrap;
     width: 350px;
     height: 150px;
+    font-size: 40px;
+}
+@media (width<=400px) {
+    #sc1,#sc2
+    {
+        margin: 4px;
+        font-weight: bold;
+        white-space: pre-wrap;
+        width: 150px;
+        height: 100px;
+        font-size: 20px;
+    }
+   
 }
