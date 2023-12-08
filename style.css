@@ -18,6 +18,7 @@ body
 }
 label
 {
+    margin-left: 10px;
     font-size: 40px;
     font-weight: bold;
 }
@@ -40,5 +41,9 @@ label
         width: 150px;
         height: 100px;
         font-size: 20px;
+    }
+    label
+    {
+        font-size: 30px;
     }
 }
