@@ -14,16 +14,21 @@
 </head>
 <body>
     <div id="map"></div>
-    <div class="op">
+    <div class="row">
+        <div class="col-sm-4">
         <label for="sc1">請選擇地區</label>
-        <select id="sc1">
+        <select id="sc1" class="form-select " aria-label="Default select example">
             <option></option>
         </select>
-        <br>
-        <label for="sc2">請選擇路線</label>
-        <select id="sc2">
-            <option></option>
-        </select>
+        </div> 
+        <div class="col-sm-4">
+            <label for="sc2" >請選擇路線</label>
+            <select id="sc2" class="form-select" >
+                <option></option>
+            </select>     
+        </div>
+    </div>
+    
     </div>
     <script src="/js/main.js"></script>     
     <script src="/js/map_json.js"></script>     

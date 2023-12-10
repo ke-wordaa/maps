@@ -5,9 +5,14 @@ body
     min-width: 250px;
     min-height: 550px;
 } 
+.leaflet-control-attribution {
+    display: none;
+}
+  
+  
 #map 
 {
-    height: 50vh;
+    height: 70vh;
     width: 100%;
 }
 .leaflet-popup-content
@@ -22,28 +27,18 @@ label
     font-size: 40px;
     font-weight: bold;
 }
-#sc1,#sc2
+.form-select
 {
     margin: 10px;
     font-weight: bold;
     white-space: pre-wrap;
-    width: 350px;
     height: 100px;
     font-size: 32px;
 }
 @media  (width<=500px ),( height<=500px)
 {
-    #sc1,#sc2
-    {
-        margin: 4px;
-        font-weight: bold;
-        white-space: pre-wrap;
-        width: 150px;
-        height: 100px;
-        font-size: 20px;
-    }
-    label
-    {
-        font-size: 30px;
+    #map
+    {   
+        height: 50vh;
     }
 }
