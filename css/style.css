@@ -29,10 +29,12 @@ label
 }
 .form-select
 {
+    border-width: 4px;
+    border-radius: 2.5pc;
+    width: 80%;
     margin: 10px;
     font-weight: bold;
     white-space: pre-wrap;
-    height: 100px;
     font-size: 32px;
 }
 @media  (width<=500px ),( height<=500px)
