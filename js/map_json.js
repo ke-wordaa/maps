@@ -6,7 +6,7 @@ $(window).ready(function () {
         }).addTo(map);
 $.ajax
 ({
-    url: "./../json/main.json",
+    url: ".././json/main.json",
     success: function(data) 
     {
         for (let i = 0; i < data.Classification.length; i++) 
