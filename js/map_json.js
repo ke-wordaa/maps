@@ -38,12 +38,14 @@ $.ajax
         })
         $("#sc2").change(function () { 
             let a =""
-            let sc1_v = $("#sc1").val();
-            let sc2_v = $("#sc2").val();
-            for (let i = 0; i < data.coordinate[sc1_v][sc2_v].length; i++) {
-                a += data.coordinate[sc1_v][sc2_v][i][0]+"\n"
-            }     
-            alert(a)            
+            let sc1_v = $("#sc1").val()
+            let sc2_v = $("#sc2").val()
+            if (sc2_v) {  
+                for (let i = 0; i < data.coordinate[sc1_v][sc2_v].length; i++) {
+                    a += data.coordinate[sc1_v][sc2_v][i][0]+"\n"
+                }     
+                alert(a)            
+            }
         });
     }})
 })
