@@ -33,12 +33,16 @@ label
     margin: 10px;
     font-weight: bold;
     white-space: pre-wrap;
-    font-size: 32px;
+    font-size: 26px;
 }
 @media  (width<=500px ),( height<=500px)
 {
     #map
     {   
         height: 50vh;
+    }
+    .form-select
+    {
+        font-size: 16px;
     }
 }

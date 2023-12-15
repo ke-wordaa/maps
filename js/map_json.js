@@ -1,10 +1,11 @@
 $(window).ready(function () {
     var school = [24.838298538785217, 121.00369361036967]
     var map = L.map('map').setView(school,18);
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', 
+    {
             attribution: '義民高中校車路線查詢器'
-        }).addTo(map);
-$.ajax
+    }).addTo(map);
+$.ajax  
 ({
     url: "json/main.json",
     success: function(data) 
@@ -13,7 +14,7 @@ $.ajax
         {
             $("#sc1").append("<option>"+data.Classification[i]+"</option>");
         }
-        $("#sc1").change(function (e) 
+        $("#sc1").change(function () 
         {
             let sc2 = $("#sc2").children()
             let sc1_v = $("#sc1").val();
@@ -35,5 +36,14 @@ $.ajax
                 $("#sc2").html('<option></option>');;
             }
         })
+        $("#sc2").change(function () { 
+            let a =""
+            let sc1_v = $("#sc1").val();
+            let sc2_v = $("#sc2").val();
+            for (let i = 0; i < data.coordinate[sc1_v][sc2_v].length; i++) {
+                a += data.coordinate[sc1_v][sc2_v][i][0]+"\n"
+            }     
+            alert(a)            
+        });
     }})
 })
