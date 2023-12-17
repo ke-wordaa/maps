@@ -46,22 +46,22 @@ $.ajax
                 a[i] = data.coordinate[sc1_v][sc2_v][i];
             }
             map.setView([a[0][1],a[0][2]],a[0][0]);
-            let markers = [[]];     
-            console.log(a[2][2])
-            for (let i = 1; i < a.length; i++) 
-            {
-              for (let j = 1; j < a[i].length; j++) 
-              {
-                markers[i-1][j-1] = a[i][j]
+            a.splice(0,1)
+            let markers = [[]];      
+            console.log(a)
+            for (let i = 0; i < a.length; i++) {
+              for (let j = 0; j < 1; j++) {
+                const latLng = [a[i][j + 1], a[i][j + 2]];
+                const popup = L.popup().setLatLng(latLng).setContent(a[i][0]);
+                const marker = L.marker(latLng).bindPopup(popup);
+                marker.addTo(map);
+                marker.openPopup();
               }
             }
-            // const marker = L.marker();
-            // const popup = L.popup().setContent("台北 101");
-            // marker.bindPopup(popup);
-            // map.addLayer(marker);
-            // popup.open();
+            
+            
         }
-    });
+      });
 }
 });
 });
