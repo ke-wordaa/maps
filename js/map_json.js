@@ -3,7 +3,8 @@ $(window).ready(function () {
   var map = L.map('map').setView(school,18);
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',
   {
-    attribution: '義民高中校車路線查詢器'
+    attribution: '義民高中校車路線查詢器',
+    maxZoom:19
   }).addTo(map)
   var markersLayer = L.layerGroup().addTo(map);
 $.ajax
@@ -61,7 +62,12 @@ $.ajax
             {
               const latLng = [a[i][j + 1], a[i][j + 2]];   
               const marker = L.marker(latLng);
-              const popup = L.popup()
+              const popup = L.popup({
+                closeOnClick: false,
+                autoClose: false,
+                closeButton : false,
+                offset:[0,-10]
+              })
                 .setLatLng(latLng)
                 .setContent(a[i][0])
               marker.bindPopup(popup)
