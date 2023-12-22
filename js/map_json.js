@@ -56,24 +56,29 @@ $.ajax
           a.splice(0,1)   
           const popups = []
           const markers = []
+          
           for (let i = 0; i < a.length; i++) 
           {
             for (let j = 0; j < 1; j++) 
             {
               const latLng = [a[i][j + 1], a[i][j + 2]];   
-              const marker = L.marker(latLng);
+              const marker = L.marker(latLng,{
+                icon:L.icon({
+                  iconUrl: 'bus_2_fill.png',
+                  iconSize: [60, 60],
+                }),
+              });
               const popup = L.popup({
-                closeOnClick: false,
-                autoClose: false,
-                closeButton : false,
-                offset:[0,-10]
+                // closeOnClick: false,
+                // autoClose: false,
+                // closeButton : false
               })
                 .setLatLng(latLng)
                 .setContent(a[i][0])
               marker.bindPopup(popup)
               popups.push(popup)
               markers.push(marker)
-              popup.openOn(map)
+              // popup.openOn(map)
             }
           }
           L.layerGroup(popups).addTo(markersLayer)
