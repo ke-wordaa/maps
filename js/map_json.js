@@ -65,14 +65,14 @@ $.ajax
               const marker = L.marker(latLng,{
                 icon:L.icon({
                   iconUrl: 'bus_2_fill.png',
-                  iconSize: [60, 60],
+                  iconSize: [50 , 50],
                 }),
               });
               const popup = L.popup({
-                // closeOnClick: false,
-                // autoClose: false,
-                // closeButton : false
-              })
+                  // closeOnClick: false,
+                  // autoClose: false,
+                  // closeButton : false
+                })
                 .setLatLng(latLng)
                 .setContent(a[i][0])
               marker.bindPopup(popup)
@@ -81,7 +81,7 @@ $.ajax
               // popup.openOn(map)
             }
           }
-          L.layerGroup(popups).addTo(markersLayer)
+          // L.layerGroup(popups).addTo(markersLayer)
           L.layerGroup(markers).addTo(markersLayer)
         }
         else
