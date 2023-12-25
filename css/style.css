@@ -6,7 +6,8 @@ body
     min-height: 550px;
 } 
 .leaflet-control-attribution {
-    display: none;
+    /* display: none; */
+    font-size: 40px;
 }
 #map 
 {
@@ -20,10 +21,6 @@ body
     text-align: center; 
     
 }
-
-
-
-
 label
 {
     margin-left: 10px;
