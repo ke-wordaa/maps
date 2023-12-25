@@ -6,6 +6,7 @@ $(window).ready(function () {
     attribution: '義民高中校車路線查詢器',
     maxZoom:19
   }).addTo(map)
+  map.attributionControl.setPrefix("");
   var markersLayer = L.layerGroup().addTo(map);
 $.ajax
 ({
