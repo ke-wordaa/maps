@@ -46,7 +46,7 @@ $.ajax
         let sc2_v = $("#sc2").val()
         if (sc2_v)
         {
-          map.setView(school)
+          map.setView(school,18)
           let a = []
           for (let i = 0; i < data.coordinate[sc1_v][sc2_v].length; i++) 
           {
